@@ -12,7 +12,7 @@ function Projects(props) {
       <h1>{currentProject.name}</h1>
       <div>
       <img
-            src={photo} alt="allergy"
+            src={photo} alt="Projects"
             className="img-thumbnail mx-1"
           />
       </div>

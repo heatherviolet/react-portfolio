@@ -15,7 +15,7 @@ function Nav(props) {
   }, [currentProject]);
 
   return (
-    <header className="flex-row px-1">
+    <header id="nav" className="flex-row px-1">
       <h2>
         Heather Albjerg
       </h2>
@@ -26,6 +26,12 @@ function Nav(props) {
               About me
             </a>
           </li>
+          <li className="mx-2">
+            <a data-testid="resume" href="resume" onClick={() => setContactSelected(false)}>
+              Resume
+            </a>
+          </li>
+          
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>

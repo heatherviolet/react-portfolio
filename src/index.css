@@ -5,11 +5,11 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
+  --primary: #641cf5;
+  --secondary: #e28ae2;
   --tertiary: #B12704;
   --light: #fafafa;
-  --dark: #000000;
+  --dark: #7e49a1;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -148,6 +148,10 @@ input:focus {
 
 li {
   list-style: none;
+}
+
+nav {
+  background: rgb(29, 114, 211);
 }
 
 nav a:hover {
