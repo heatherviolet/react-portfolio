@@ -1,30 +1,39 @@
 import React, { useState } from 'react';
-import About from './components/About';
 import Nav from './components/Nav';
+import About from './components/About';
 import Projects from './components/Projects';
+import ContactForm from './components/Contact';
 
 function App() {
   const [projects] = useState([
     {
-        name: 'allergy',
-        description: 'An app that allows you to check which allergies/food restrictions to find recipes',
-      },
+      name: 'allergy',
+      description: 'Photos of grocery stores, food trucks, and other commercial projects',
+    }
   ]);
 
   const [currentProject, setCurrentProject] = useState(projects[0]);
+
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
       <Nav
         projects={projects}
         setCurrentProject={setCurrentProject}
-        currentCategory={currentProject}
+        currentProject={currentProject}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        <div>
-          <Projects></Projects>
-          <About></About>
-        </div>
+        {!contactSelected ? (
+          <>
+            <Projects currentProject={currentProject}></Projects>
+            <About></About>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        )}
       </main>
     </div>
   );

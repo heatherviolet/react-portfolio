@@ -1,47 +1,48 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
+function Nav(props) {
+  const {
+    projects = [],
+    setCurrentProject,
+    contactSelected,
+    currentProject,
+    setContactSelected,
+  } = props;
 
-function Nav() {
-const [projects] = useState([
-  {
-    name: 'allergy',
-    description: 'An app that allows you to check which allergies/food restrictions to find recipes',
-  },
-  { name: 'portraits', description: 'Portraits of people in my life' },
-  { name: 'food', description: 'Delicious delicacies' },
-  { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
-]);
-const [currentProject, setCurrentProject] = useState(projects[0]);
+  useEffect(() => {
+    document.title = capitalizeFirstLetter(currentProject.name);
+  }, [currentProject]);
 
   return (
-    <header>
-         <nav>
-    <ul className="flex-row">
-      <li className="mx-2">
-        <a href="#about">
-          About me
-        </a>
-      </li>
-      <li>
-      <a href="#Portfolio">
-          Portfolio
-        </a>
-      </li>
-      <li>
-        <span>Resume</span>
-      </li>
-      <li>
-        <span>Contact</span>
-      </li>
-      {projects.map((project) => (
-            <li className={`mx-1 ${
-                currentProject.name === project.name && 'navActive'
-                }`} key={project.name}>
+    <header className="flex-row px-1">
+      <h2>
+        Heather Albjerg
+      </h2>
+      <nav>
+        <ul className="flex-row">
+          <li className="mx-2">
+            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+              About me
+            </a>
+          </li>
+          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
+          </li>
+          {projects.map((project) => (
+            <li
+              className={`mx-1 ${
+                currentProject.name === project.name && !contactSelected && 'navActive'
+                }`}
+              key={project.name}
+            >
               <span
                 onClick={() => {
-                  setCurrentProject(project)
+                  setCurrentProject(project);
+                  setContactSelected(false);
                 }}
               >
+                {capitalizeFirstLetter(project.name)}
               </span>
             </li>
           ))}
