@@ -3,6 +3,8 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
 import ContactForm from './components/Contact';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   const [projects] = useState([

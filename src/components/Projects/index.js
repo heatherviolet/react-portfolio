@@ -1,23 +1,30 @@
 import React from "react";
-import photo from "../../assets/projects/allergy-free.jpg";
+import photoAllergy from "../../assets/projects/allergy-free.jpg";
+import photoCommerce from "../../assets/projects/e-commerce.jpg";
+import photoImdb from "../../assets/projects/imdb.jpg";
+import ProjectCard from "../../components/Projects/ProjectCard.js";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
-function Projects(props) {
-  const currentProject= {
-    name: "Allergy Free Kitchen",
-    description:
-      "Website that filters out allergies by ingredient",
-  };
+const ProjectList = ({ project }) => {
+    const []
+}
+
+function Projects() {
   return (
-    <section>
-      <h1>{currentProject.name}</h1>
+    <Container>
+        <Row>
+      <h1>Projects</h1>
+      <ProjectCard />
       <div>
       <img
-            src={photo} alt="Projects"
+            src={photoAllergy} alt="Projects"
             className="img-thumbnail mx-1"
           />
       </div>
-      <p>{currentProject.name}</p>
-    </section>
+      <p></p>
+      </Row>
+    </Container>
   );
 }
 export default Projects;
