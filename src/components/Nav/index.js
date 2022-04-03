@@ -1,56 +1,48 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import { Nav } from "react-bootstrap";
 
-function Nav(props) {
-  const {
-    projects = [],
-    setCurrentProject,
-    contactSelected,
-    currentProject,
-    setContactSelected,
-  } = props;
-
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentProject.name);
-  }, [currentProject]);
+function NavBar(props) {
+    const {
+        projects = [],
+        setCurrentProject,
+        contactSelected,
+        currentProject,
+        setContactSelected,
+      } = props;
 
   return (
-    <header className="flex-row px-1">
-      <h2>
-        Heather Albjerg
-      </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About me
-            </a>
-          </li>
-          
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+    <Nav
+activeKey={currentProject} onSelect={(setCurrentProject)}
+>
+  <Nav.Item>
+  <Nav.Link data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+      About
+</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+  <Nav.Link onClick={() => setContactSelected(false)}>
+      Projects
+</Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-          {projects.map((project) => (
-            <li
-              className={`mx-1 ${
-                currentProject.name === project.name && !contactSelected && 'navActive'
-                }`}
-              key={project.name}
-            >
-              <span
+            </Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link eventKey="disabled" disabled>
+      Disabled
+    </Nav.Link>
+  </Nav.Item>
+  <span
                 onClick={() => {
-                  setCurrentProject(project);
+                  setCurrentProject(projects);
                   setContactSelected(false);
                 }}
-              >
-                {capitalizeFirstLetter(project.name)}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
+              ></span>
+</Nav>
   );
 }
 
-export default Nav;
+export default NavBar;

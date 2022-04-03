@@ -6,10 +6,6 @@ import ProjectCard from "../../components/Projects/ProjectCard.js";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-const ProjectList = ({ project }) => {
-    const []
-}
-
 function Projects() {
   return (
     <Container>
