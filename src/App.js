@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -30,12 +31,13 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
-            <Projects currentProject={currentProject}></Projects>
+            <div></div>
             <About></About>
           </>
         ) : (
           <ContactForm></ContactForm>
         )}
+        <Footer></Footer>
       </main>
     </div>
   );

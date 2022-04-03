@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 import { Nav } from "react-bootstrap";
 
 function NavBar(props) {
@@ -15,9 +14,10 @@ function NavBar(props) {
     <Nav
 activeKey={currentProject} onSelect={(setCurrentProject)}
 >
+<h2>Heather Albjerg</h2>
   <Nav.Item>
-  <Nav.Link data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-      About
+  <Nav.Link id="about" href="#about" onClick={() => setContactSelected(false)}>
+      About Me
 </Nav.Link>
   </Nav.Item>
   <Nav.Item>
@@ -31,9 +31,9 @@ activeKey={currentProject} onSelect={(setCurrentProject)}
             </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="disabled" disabled>
-      Disabled
-    </Nav.Link>
+  <Nav.Link className={`mx-2 ${contactSelected && 'Resume'}`}>
+            <span onClick={() => setContactSelected(true)}>Resume</span>
+            </Nav.Link>
   </Nav.Item>
   <span
                 onClick={() => {
