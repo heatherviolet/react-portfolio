@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-// import Projects from './components/Projects';
+import Projects from './components/Projects';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
@@ -23,6 +23,7 @@ function App() {
             {linkSelected === "about" && <About></About>}
             {linkSelected === "resume" && <Resume></Resume>}
             {linkSelected === "contact" &&<ContactForm></ContactForm>}
+            {linkSelected === "projects" && <Projects></Projects>}
         </main>
         <Footer></Footer>
     </div>

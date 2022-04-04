@@ -1,3 +1,13 @@
+main {
+	margin: 0 auto!important;
+	max-width: 90%!important;
+    padding: 50px 30px!important;
+}
+
+body { 
+   background-color: #280079!important;
+}
+
 :root {
     --primary: #8c54ff;
     --secondary: #F3A847;
@@ -11,8 +21,25 @@
     --spacing-five: calc(2.5rem);
   
   }
-  
 
-.card {
-    background-color: rgb(132, 95, 167);
+
+  .card {
+    background-color: #8867ad!important;
+    color: #fff!important;
+}
+
+.contact { 
+    align-items: center!important;
+}
+
+label {
+    font-size: 100%;
+    width: 250px;
+    margin: 10px 0;
+}
+
+input {
+    width: 250px;
+    padding:15px;
+    margin: 2px 0;
 }

@@ -10,7 +10,7 @@ function NavBar(props) {
   return (
      <Nav>
 
-<h2>Heather Albjerg</h2>
+<h2 class="text-primary">Heather Albjerg</h2>
   <Nav.Item>
   <Nav.Link id="about" href="#about" onClick={() => setLinkSelected("about")}>
       About Me
@@ -31,12 +31,6 @@ function NavBar(props) {
             <span onClick={() => setLinkSelected("resume")}>Resume</span>
             </Nav.Link>
   </Nav.Item>
-  {/* <span
-                onClick={() => {
-                  setCurrentProject(projects);
-                  setContactSelected(false);
-                }}
-            //   ></span> */}
 </Nav>
   );
 }
