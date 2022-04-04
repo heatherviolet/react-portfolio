@@ -3,44 +3,40 @@ import { Nav } from "react-bootstrap";
 
 function NavBar(props) {
     const {
-        projects = [],
-        setCurrentProject,
-        contactSelected,
-        currentProject,
-        setContactSelected,
+        linkSelected,
+        setLinkSelected,
       } = props;
 
   return (
-    <Nav
-activeKey={currentProject} onSelect={(setCurrentProject)}
->
+     <Nav>
+
 <h2>Heather Albjerg</h2>
   <Nav.Item>
-  <Nav.Link id="about" href="#about" onClick={() => setContactSelected(false)}>
+  <Nav.Link id="about" href="#about" onClick={() => setLinkSelected(false)}>
       About Me
 </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-  <Nav.Link onClick={() => setContactSelected(false)}>
+  <Nav.Link id="projects" onClick={() => setLinkSelected(false)}>
       Projects
 </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+    <Nav.Link className={`mx-2 ${linkSelected && 'navActive'}`}>
+            <span onClick={() => setLinkSelected(true)}>Contact</span>
             </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-  <Nav.Link className={`mx-2 ${contactSelected && 'Resume'}`}>
-            <span onClick={() => setContactSelected(true)}>Resume</span>
+  <Nav.Link id="resume" onClick={() => setLinkSelected(false)}>
+            <span onClick={() => setLinkSelected(true)}>Resume</span>
             </Nav.Link>
   </Nav.Item>
-  <span
+  {/* <span
                 onClick={() => {
                   setCurrentProject(projects);
                   setContactSelected(false);
                 }}
-              ></span>
+            //   ></span> */}
 </Nav>
   );
 }
