@@ -3,8 +3,11 @@
 I created my professional portfolio using react. I used the bootstrap CSS framework to style my page. I also used hooks and state in my portfolio. 
 
 # Image
-(/assets/react.png)
+<img width="1275" alt="react" src="https://user-images.githubusercontent.com/93415973/161489348-81185d96-d17e-47ed-80a7-126a969cd5bf.png">
+
 # Link to Deployed Application
+
+https://heatherviolet.github.io/react-portfolio/
 
 # Getting Started with Create React App
 
