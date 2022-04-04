@@ -12,9 +12,7 @@ function Footer() {
             <div class="col-lg-4 col-lg-offset-4 col-xs-12">
                 <div class="pull-right">
                     <a href="#"><i class="fa fa-behance-square fa-icon"></i></a>
-                    <a href="#"><i class="fa fa-linkedin-square fa-icon"></i></a>
-                    <a href="#"><i class="fa fa-twitter-square fa-icon"></i></a>
-                    <a href="#"><i class="fa fa-skype fa-icon"></i></a>
+                    <a href="https://www.linkedin.com/in/heather-albjerg-b80b03219/"><i class="fa fa-linkedin-square fa-icon"></i></a>
                     <a href="#"><i class="fa fa-facebook-square fa-icon"></i></a>
                     <a href="https://github.com/heatherviolet"><i class="fa fa-github-square fa-icon"></i></a>
                     
