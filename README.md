@@ -6,6 +6,8 @@ I created my professional portfolio using react. I used the bootstrap CSS framew
 (/assets/react.png)
 # Link to Deployed Application
 
+(https://heatherviolet.github.io/react-portfolio/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
