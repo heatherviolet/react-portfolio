@@ -17,6 +17,7 @@ function Footer() {
                     <a href="#"><i class="fa fa-skype fa-icon"></i></a>
                     <a href="#"><i class="fa fa-facebook-square fa-icon"></i></a>
                     <a href="#"><i class="fa fa-github-square fa-icon"></i></a>
+                    
                 </div>
             </div>
         </div>

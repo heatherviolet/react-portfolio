@@ -12,23 +12,23 @@ function NavBar(props) {
 
 <h2>Heather Albjerg</h2>
   <Nav.Item>
-  <Nav.Link id="about" href="#about" onClick={() => setLinkSelected(false)}>
+  <Nav.Link id="about" href="#about" onClick={() => setLinkSelected("about")}>
       About Me
 </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-  <Nav.Link id="projects" onClick={() => setLinkSelected(false)}>
+  <Nav.Link id="projects" onClick={() => setLinkSelected("projects")}>
       Projects
 </Nav.Link>
   </Nav.Item>
   <Nav.Item>
     <Nav.Link className={`mx-2 ${linkSelected && 'navActive'}`}>
-            <span onClick={() => setLinkSelected(true)}>Contact</span>
+            <span onClick={() => setLinkSelected("contact")}>Contact</span>
             </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-  <Nav.Link id="resume" onClick={() => setLinkSelected(false)}>
-            <span onClick={() => setLinkSelected(true)}>Resume</span>
+  <Nav.Link>
+            <span onClick={() => setLinkSelected("resume")}>Resume</span>
             </Nav.Link>
   </Nav.Item>
   {/* <span

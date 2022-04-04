@@ -6,11 +6,12 @@ import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
 import "bootstrap/dist/css/bootstrap.min.css";
+import './index.css';
 
 
 function App() {
-  const [linkSelected, setLinkSelected] = useState(false);
-
+  const [linkSelected, setLinkSelected] = useState("about");
+  //  render section and conditionals
   return (
     <div>
       <Nav
@@ -18,15 +19,10 @@ function App() {
         setLinkSelected={setLinkSelected}
       ></Nav>
       <main>
-        {!linkSelected ? (
-          <>
             <div></div>
-            <About></About>
-            <Resume></Resume>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
+            {linkSelected === "about" && <About></About>}
+            {linkSelected === "resume" && <Resume></Resume>}
+            {linkSelected === "contact" &&<ContactForm></ContactForm>}
         </main>
         <Footer></Footer>
     </div>
