@@ -18,7 +18,7 @@ function About() {
     </div>
     <div class="col">
         <div class="card-block px-2">
-            <p class="card-text" class="text-light text-right"> I am originally from Phoenix, Arizona and I moved to Portland two years ago with my daughter. I enjoy exploring all of the nature around Oregon. I currently work for Instacart as a personal shopper and have been throughout the pandemic.</p>
+            <p className="card-text text-light text-right"> I am originally from Phoenix, Arizona and I moved to Portland two years ago with my daughter. I enjoy exploring all of the nature around Oregon. I currently work for Instacart as a personal shopper and have been throughout the pandemic.</p>
         </div>
     </div>
 </div>

@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+
 
 function Resume() {
   return (
@@ -12,12 +15,12 @@ function Resume() {
         <div class="row">
   <div class="column">
       <h3 class="text-primary">Languages</h3>
-    <p class class="text-primary">HTML</p>
-    <p class class="text-primary">CSS</p>
-    <p class class="text-primary">Javascript</p>
-    <p class class="text-primary">Node.js</p>
-    <p class class="text-primary">Express.js</p>
-    <p class class="text-primary">Mongoose</p>
+      <FontAwesomeIcon icon="fa-brands fa-html5" />
+    <p class="text-primary">CSS</p>
+    <p class="text-primary">Javascript</p>
+    <p class="text-primary">Node.js</p>
+    <p class="text-primary">Express.js</p>
+    <p class="text-primary">Mongoose</p>
   </div>
 </div>
       </div>
