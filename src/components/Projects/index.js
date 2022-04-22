@@ -8,12 +8,25 @@ import imdb from "../../assets/projects/imdb.jpg";
 import readme from "../../assets/projects/readme.jpg";
 import portfolio from "../../assets/projects/portfolio.jpg";
 import employee from "../../assets/projects/screen.jpg";
+import beet from "../../assets/projects/beethub.png";
+
 
 function projectCard() {
     return (
         <CardGroup>
+    <Card>
+    <Card.Img img width="200" height="200" variant="top" src={beet} />
+    <Card.Body>
+      <Card.Title>BeetHub</Card.Title>
+      <Card.Text>
+      A website created with MERN stack. A user can search for albums which uses the spotify API. They can then add albums to their favorites or collections. Users are also able to review albums and leave ratings.ç
+      </Card.Text>
+      <Button variant="primary" href="https://blooming-tundra-89879.herokuapp.com/">Website</Button>
+    <Button variant="primary" href="https://github.com/heatherviolet/beat-hub.git">Github</Button>
+    </Card.Body>
+  </Card>
   <Card>
-    <Card.Img variant="top" src={photoAllergy} />
+    <Card.Img img width="200" height="200" variant="top" src={photoAllergy} />
     <Card.Body>
       <Card.Title>Allergy Free Kitchen</Card.Title>
       <Card.Text>
@@ -24,7 +37,7 @@ function projectCard() {
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img variant="top" src={photoCommerce} />
+    <Card.Img img width="200" height="200" variant="top" src={photoCommerce} />
     <Card.Body>
       <Card.Title>E-Commerce</Card.Title>
       <Card.Text>
@@ -34,7 +47,7 @@ function projectCard() {
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img variant="top" src={imdb} />
+    <Card.Img img width="200" height="200" variant="top" src={imdb} />
     <Card.Body>
       <Card.Title>IMDB</Card.Title>
       <Card.Text>
@@ -45,7 +58,7 @@ function projectCard() {
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img variant="top" src={readme} />
+    <Card.Img img width="200" height="200" variant="top" src={readme} />
     <Card.Body>
       <Card.Title>README.me Generator</Card.Title>
       <Card.Text>
@@ -55,7 +68,7 @@ function projectCard() {
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img variant="top" src={portfolio} />
+    <Card.Img img width="200" height="200" variant="top" src={portfolio} />
     <Card.Body>
       <Card.Title>First Portfolio</Card.Title>
       <Card.Text>
@@ -66,7 +79,7 @@ function projectCard() {
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img variant="top" src={employee} />
+    <Card.Img img width="200" height="200" variant="top" src={employee} />
     <Card.Body>
       <Card.Title>Employee Tracker</Card.Title>
       <Card.Text>
