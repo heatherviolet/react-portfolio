@@ -19,7 +19,7 @@ function projectCard() {
     <Card.Body>
       <Card.Title>BeetHub</Card.Title>
       <Card.Text>
-      A website created with MERN stack. A user can search for albums which uses the spotify API. They can then add albums to their favorites or collections. Users are also able to review albums and leave ratings.ç
+      A website created with MERN stack. A user can search for albums which uses the spotify API. They can then add albums to their favorites or collections. Users are also able to review albums and leave ratings.
       </Card.Text>
       <Button variant="primary" href="https://blooming-tundra-89879.herokuapp.com/">Website</Button>
     <Button variant="primary" href="https://github.com/heatherviolet/beat-hub.git">Github</Button>
