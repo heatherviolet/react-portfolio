@@ -13,6 +13,7 @@ function App() {
   const [linkSelected, setLinkSelected] = useState("about");
   //  render section and conditionals
   return (
+    
     <div>
       <Nav
         linkSelected={linkSelected}

@@ -38,26 +38,72 @@ function ContactForm() {
 
   return (
     <section class="contact">
-      <h1 data-testid="h1tag" class="text-primary">Contact me</h1>
+      <h1 data-testid="h1tag" class="text-primary"
+      style={{ 
+        padding: '20px',
+      }}
+      >Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name" class="text-primary">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="email" class="text-primary">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message" class="text-primary">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <label htmlFor="name" class="text-primary"
+          style={{ 
+            padding: '20px',
+          }}
+          >Name:</label>
+          <input type="text" name="name" defaultValue={name} onBlur={handleChange}
+            style={{
+              color: '#32434d',
+              width: '30%',
+              backgroundColor: 'lightblue',
+              padding: '5px',
+              borderRadius: '5px'
+            }} 
+            />
+     
+          <label htmlFor="email" class="text-primary"
+          style={{ 
+            padding: '20px',
+          }}
+          >Email address:</label>
+          <input type="email" name="email" defaultValue={email} onBlur={handleChange}
+            style={{
+              color: '#32434d',
+              width: '30%',
+              backgroundColor: 'lightblue',
+              padding: '5px',
+              borderRadius: '5px'
+            }}
+          />
+      
+          <label htmlFor="message" class="text-primary"
+          style={{ 
+            padding: '20px',
+          }}
+          >Message:</label>
+          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}
+            style={{
+              color: '#32434d',
+              width: '30%',
+              backgroundColor: 'lightblue',
+              padding: '10px',
+              borderRadius: '5px'
+            }}  />
         </div>
         {errorMessage && (
           <div>
             <p className="error-text" class="text-primary">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" class="button" type="submit"
+          style={{
+            color: '#32434d',
+            width: '30%',
+            backgroundColor: 'lightblue',
+            padding: '10px',
+            borderRadius: '5px',
+            
+          }}  
+          >Submit</button>
       </form>
     </section>
   );
