@@ -4,6 +4,7 @@ main {
     padding: 50px 30px!important;
 }
 
+
 body { 
    background-color: #280079!important;
 }
@@ -31,7 +32,7 @@ body {
 
 label {
     font-size: 100%;
-    width: 250px;
+    width: 200px;
     margin: 10px 0;
 }
 
@@ -39,6 +40,7 @@ input {
     width: 250px;
     padding: 15px;
     margin: 2px 0;
+    
 }
 
 .nav { 
@@ -50,14 +52,41 @@ input {
     align-items: center!important;
     border: 1px solid white;
     border-radius: 5px;
-    width: 50%;
-    height: 80vh;
+    background: lightblue;
+    width: 50vw;
+    height: 50%;
+    box-shadow: 10px 10px;
+    display: table-row;
+    
 }
 
+label {
+    font-size: 20px;
+    
+}
 
+form {
+    background: purple;
+    border: 1px solid #dedede;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 30px 50px;
+  }
+  
 h1 { 
     text-decoration: underline;
+    padding-bottom: 20px;
     text-decoration-color: white;
     border-bottom: 2px;
 }
 
+.submit {
+    background-color: #6976d9;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 20px 0px;
+} 

@@ -40,50 +40,52 @@ function ContactForm() {
     <section class="contact">
       <h1 data-testid="h1tag" class="text-primary"
       style={{ 
-        padding: '20px',
+        padding: '30px',
       }}
       >Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name" class="text-primary"
           style={{ 
-            padding: '20px',
+            padding: '30px',
+            
+            
           }}
           >Name:</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange}
             style={{
               color: '#32434d',
-              width: '30%',
+              width: '50%',
               backgroundColor: 'lightblue',
-              padding: '5px',
-              borderRadius: '5px'
+              padding: '10px',
+              borderRadius: '5px',
             }} 
             />
      
           <label htmlFor="email" class="text-primary"
           style={{ 
-            padding: '20px',
+            padding: '30px',
           }}
           >Email address:</label>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange}
             style={{
               color: '#32434d',
-              width: '30%',
+              width: '50%',
               backgroundColor: 'lightblue',
-              padding: '5px',
+              padding: '10px',
               borderRadius: '5px'
             }}
           />
       
           <label htmlFor="message" class="text-primary"
           style={{ 
-            padding: '20px',
+            padding: '30px',
           }}
           >Message:</label>
           <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}
             style={{
               color: '#32434d',
-              width: '30%',
+              width: '50%',
               backgroundColor: 'lightblue',
               padding: '10px',
               borderRadius: '5px'
@@ -96,10 +98,11 @@ function ContactForm() {
         )}
         <button data-testid="button" class="button" type="submit"
           style={{
-            color: '#32434d',
-            width: '30%',
+            color: '#8867ad',
+            width: '50%',
             backgroundColor: 'lightblue',
             padding: '10px',
+            margin: '30px',
             borderRadius: '5px',
             
           }}  

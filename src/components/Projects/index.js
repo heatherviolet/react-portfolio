@@ -9,11 +9,15 @@ import readme from "../../assets/projects/readme.jpg";
 import portfolio from "../../assets/projects/portfolio.jpg";
 import employee from "../../assets/projects/screen.jpg";
 import beet from "../../assets/projects/beethub.png";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 function projectCard() {
     return (
-        <CardGroup>
+      <Row xs={2} md={3} className="g-4">
+      {Array.from({ length: 3 }).map((_, idx) => (
+      <Col>
     <Card>
     <Card.Img img width="200" height="200" variant="top" src={beet} />
     <Card.Body>
@@ -23,8 +27,9 @@ function projectCard() {
       </Card.Text>
       <Button variant="primary" href="https://blooming-tundra-89879.herokuapp.com/">Website</Button>
     <Button variant="primary" href="https://github.com/heatherviolet/beat-hub.git">Github</Button>
-    </Card.Body>
-  </Card>
+        </Card.Body>
+      </Card>
+
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={photoAllergy} />
     <Card.Body>
@@ -89,7 +94,9 @@ function projectCard() {
     <Button variant="primary" href="https://github.com/heatherviolet/employee-tracker.git">Github</Button>
     </Card.Body>
   </Card>
-</CardGroup>
+  </Col>
+  ))}
+</Row>
 
 
     );
