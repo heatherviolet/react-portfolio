@@ -40,14 +40,14 @@ function ContactForm() {
     <section class="contact">
       <h1 data-testid="h1tag" class="text-primary"
       style={{ 
-        padding: '30px',
+        padding: '50px',
       }}
       >Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name" class="text-primary"
+          <label htmlFor="name" class="text-light"
           style={{ 
-            padding: '30px',
+            padding: '10px',
             
             
           }}
@@ -55,40 +55,41 @@ function ContactForm() {
           <input type="text" name="name" defaultValue={name} onBlur={handleChange}
             style={{
               color: '#32434d',
-              width: '50%',
+              width: '60%',
               backgroundColor: 'lightblue',
-              padding: '10px',
+              margin: '2px',
               borderRadius: '5px',
             }} 
             />
      
-          <label htmlFor="email" class="text-primary"
+          <label htmlFor="email" class="text-light"
           style={{ 
-            padding: '30px',
+            padding: '10px',
           }}
           >Email address:</label>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange}
             style={{
               color: '#32434d',
-              width: '50%',
+              width: '60%',
+              margin: '2px',
               backgroundColor: 'lightblue',
-              padding: '10px',
               borderRadius: '5px'
             }}
           />
       
-          <label htmlFor="message" class="text-primary"
+          <label htmlFor="message" class="text-light"
           style={{ 
-            padding: '30px',
+            padding: '10px',
           }}
           >Message:</label>
           <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}
             style={{
               color: '#32434d',
-              width: '50%',
+              width: '60%',
               backgroundColor: 'lightblue',
               padding: '10px',
-              borderRadius: '5px'
+              borderRadius: '5px',
+              margin: '2px'
             }}  />
         </div>
         {errorMessage && (
@@ -98,11 +99,11 @@ function ContactForm() {
         )}
         <button data-testid="button" class="button" type="submit"
           style={{
-            color: '#8867ad',
-            width: '50%',
+            color: '#32434d',
+            width: '60%',
             backgroundColor: 'lightblue',
             padding: '10px',
-            margin: '30px',
+            margin: '2px',
             borderRadius: '5px',
             
           }}  
