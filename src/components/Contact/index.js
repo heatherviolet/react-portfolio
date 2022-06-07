@@ -38,9 +38,9 @@ function ContactForm() {
 
   return (
     <section class="contact">
-      <h1 data-testid="h1tag" class="text-primary"
+      <h1 data-testid="h1tag" class="contact-me"
       style={{ 
-        padding: '50px',
+        padding: '40px',
       }}
       >Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
@@ -48,8 +48,6 @@ function ContactForm() {
           <label htmlFor="name" class="text-light"
           style={{ 
             padding: '10px',
-            
-            
           }}
           >Name:</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange}
@@ -94,7 +92,7 @@ function ContactForm() {
         </div>
         {errorMessage && (
           <div>
-            <p className="error-text" class="text-primary">{errorMessage}</p>
+            <p className="error-text" class="text-light">{errorMessage}</p>
           </div>
         )}
         <button data-testid="button" class="button" type="submit"
@@ -105,7 +103,6 @@ function ContactForm() {
             padding: '10px',
             margin: '2px',
             borderRadius: '5px',
-            
           }}  
           >Submit</button>
       </form>
