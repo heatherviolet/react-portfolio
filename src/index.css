@@ -7,6 +7,7 @@ main {
 
 body { 
    background-color: #280079!important;
+   background-image: url("../src/assets/cover/header-background.jpg");
 }
 
 :root {
@@ -27,8 +28,12 @@ body {
 .card {
     background-color: #8867ad!important;
     color: #fff!important;
+    width: 400px;
 }
 
+.img-fluid { 
+    border-radius:50%;
+}
 
 label {
     font-size: 100%;
@@ -39,19 +44,21 @@ label {
 input {
     width: 250px;
     padding: 15px;
-    margin: 2px 0;
-    
+    margin: 2px 0; 
 }
 
 .nav { 
     background-color: rgb(26, 20, 25);
-    
+    padding: 15px;
 }
 
+.text-primary { 
+    padding-left: 20px;
+}
 .contact { 
     align-items: center!important;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     background: lightblue;
     width: 50vw;
     height: 50%;
@@ -66,15 +73,13 @@ label {
 }
 
 form {
-    background: purple;
-    border: 1px solid #dedede;
+    background: rgb(22, 82, 102)!important;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
     max-width: 500px;
     padding: 30px 50px;
-    max-height: 500px;
   }
   
 h1 { 
@@ -84,3 +89,6 @@ h1 {
     border-bottom: 2px;
 }
 
+h2 {
+    text-align: center;
+}
