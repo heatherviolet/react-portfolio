@@ -26,8 +26,11 @@ function App() {
             {linkSelected === "contact" &&<ContactForm></ContactForm>}
             {linkSelected === "projects" && <Projects></Projects>}
         </main>
-        <Footer></Footer>
+        <div>
+       <Footer></Footer>
+        </div>
     </div>
+    
   );
 }
 

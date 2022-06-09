@@ -38,16 +38,21 @@ function ContactForm() {
 
   return (
     <section class="contact">
+      <div class="contact-container"
+      >
       <h1 data-testid="h1tag" class="contact-me"
       style={{ 
         padding: '40px',
+    
       }}
       >Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <form id="contact-form" onSubmit={handleSubmit}
+      >
         <div>
           <label htmlFor="name" class="text-light"
           style={{ 
             padding: '10px',
+            
           }}
           >Name:</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange}
@@ -105,8 +110,11 @@ function ContactForm() {
             borderRadius: '5px',
           }}  
           >Submit</button>
-      </form>
+          
+        </form>
+        </div>
     </section>
+  
   );
 }
 

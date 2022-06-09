@@ -7,7 +7,12 @@ main {
 
 body { 
    background-color: #280079!important;
+   font-family: auto;
    background-image: url("../src/assets/cover/header-background.jpg");
+   background-size: cover;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
 }
 
 :root {
@@ -24,6 +29,10 @@ body {
   
   }
 
+.about-me { 
+    width: 100vw; 
+    height: 100vh;
+}
 
 .card {
     background-color: #8867ad!important;
@@ -31,8 +40,11 @@ body {
     width: 400px;
 }
 
+
+
 .img-fluid { 
     border-radius:50%;
+    margin: 10px;
 }
 
 label {
@@ -58,18 +70,29 @@ input {
 .contact { 
     align-items: center!important;
     border: 1px solid white;
-    border-radius: 10px;
     background: lightblue;
     width: 50vw;
     height: 50%;
     box-shadow: 10px 10px;
     display: table-row;
-    
 }
+
+.about-me { 
+    width: 50%;
+    height: 200px;
+    }
+
+.about { 
+    width: 50%;
+    margin: auto;
+ }
+
+ .main-page { 
+     width: 75%;
+ }
 
 label {
     font-size: 20px;
-    
 }
 
 form {
@@ -101,3 +124,11 @@ h2 {
 .button {
     font-weight: bold;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
