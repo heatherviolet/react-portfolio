@@ -9,15 +9,14 @@ import readme from "../../assets/projects/readme.jpg";
 import portfolio from "../../assets/projects/portfolio.jpg";
 import employee from "../../assets/projects/screen.jpg";
 import beet from "../../assets/projects/beethub.png";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col } from 'react-grid-system';
 
 
 function projectCard() {
     return (
-      <Row xs={2} md={3} className="g-4">
-      {Array.from({ length: 3 }).map((_, idx) => (
-      <Col>
+      <Container>
+      <Row>
+      <Col sm={true}>
     <Card>
     <Card.Img img width="200" height="200" variant="top" src={beet} />
     <Card.Body>
@@ -29,7 +28,8 @@ function projectCard() {
     <Button variant="primary" href="https://github.com/heatherviolet/beat-hub.git">Github</Button>
         </Card.Body>
       </Card>
-
+      </Col>
+<Col sm={true}>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={photoAllergy} />
     <Card.Body>
@@ -41,6 +41,8 @@ function projectCard() {
     <Button variant="primary" href="https://github.com/JosephJamesCoop/the-allergy-free-kitchen.git">Github</Button>
     </Card.Body>
   </Card>
+  </Col>
+  <Col>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={photoCommerce} />
     <Card.Body>
@@ -51,6 +53,10 @@ function projectCard() {
     <Button variant="primary" href="https://github.com/heatherviolet/e-commerce-backend.git">Github</Button>
     </Card.Body>
   </Card>
+  </Col>
+  </Row>
+  <Row>
+  <Col>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={imdb} />
     <Card.Body>
@@ -62,6 +68,8 @@ function projectCard() {
     <Button variant="primary" href="https://github.com/emdok/bang-imdb.git">Github</Button>
     </Card.Body>
   </Card>
+  </Col>
+  <Col>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={readme} />
     <Card.Body>
@@ -72,6 +80,8 @@ function projectCard() {
     <Button variant="primary" href="https://github.com/heatherviolet/README.me-generator.git">Github</Button>
     </Card.Body>
   </Card>
+  </Col>
+  <Col>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={portfolio} />
     <Card.Body>
@@ -83,6 +93,8 @@ function projectCard() {
     <Button variant="primary" href="https://github.com/heatherviolet/professionalportfolio.git">Github</Button>
     </Card.Body>
   </Card>
+  </Col>
+  <Col>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={employee} />
     <Card.Body>
@@ -94,9 +106,10 @@ function projectCard() {
     <Button variant="primary" href="https://github.com/heatherviolet/employee-tracker.git">Github</Button>
     </Card.Body>
   </Card>
-  </Col>
-  ))}
-</Row>
+  </Col></Row>
+  )){'}'}
+
+</Container>
 
 
     );

@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 import html from "../../assets/resume/html.png";
 import css from "../../assets/resume/css.png";
 import js from "../../assets/resume/javascript.png";
@@ -9,32 +7,84 @@ import express from "../../assets/resume/express.jpg";
 import mongo from "../../assets/resume/mongodb.jpg";
 import node from "../../assets/resume/node.jpg";
 import sql from "../../assets/resume/sql.jpg";
+import { Container, Row, Col } from 'react-grid-system';
 
 function Resume() {
   return (
-    <section className="my-5">
+    
       <div className="my-2">
-        <p class="text-light">
-        <a href="https://docs.google.com/document/d/1Xpe9hrLXaVTfMss4P0QF7_HHLkAtcgKM2zkETvbgLek/edit?usp=sharing">
+      <button data-testid="button" class="button" type="submit"
+          style={{
+            display: 'block',
+            margin: 'auto', 
+            color: '#32434d',
+            width: '20%',
+            backgroundColor: 'lightblue',
+            padding: '10px',
+            borderRadius: '5px',
+      
+          }}  
+          >
+        <a href="https://docs.google.com/document/d/1Xpe9hrLXaVTfMss4P0QF7_HHLkAtcgKM2zkETvbgLek/edit?usp=sharing"
+          style={{
+            textDecoration: 'none',
+          }}>
             Resume
             </a>
-        </p>
-        <div class="row">
-  <div class="column">
-    <h2 class="text-primary">Languages</h2>
-    <img src={html} class="border border-primary" className="my-2" style={{ width: "10%" }} alt="htmlicon" />
-    <img src={css} class="border border-primary" className="my-2" style={{ width: "10%" }} alt="cssicon" />
-    <img src={js} class="border border-primary" className="my-2" style={{ width: "10%" }} alt="jsicon" />
-    <img src={api} class="border border-primary" className="my-2" style={{ width: "10%" }} alt="apiicon" />
-    <img src={express} class="border border-primary" className="my-2" style={{ width: "10%" }} alt="expressicon" />
-    <img src={mongo} class="border border-primary" className="my-2" style={{ width: "10%" }} alt="mongoicon" />
-    <img src={node} class="border border-primary" className="my-2" style={{ width: "10%" }} alt="nodeicon" />
-    <img src={sql} class="border border-primary" className="my-2" style={{ width: "10%" }} alt="sqlicon" />
-  </div>
-</div>
-      </div>
-      
-    </section>
+        </button>
+        <Container>
+        
+    <h2 style={{
+      color: '#f3a847',
+      margin: '20px'
+    }}>Languages</h2>
+  <Row>
+  <Col>
+    <img src={html} class="border border-primary" className="my-2" style={{ 
+      width: "40%",
+      borderRadius: '35%'}} alt="htmlicon" />
+    </Col>
+    <Col>
+    <img src={css} class="border border-primary" className="my-2" style={{ 
+      width: "40%",
+      borderRadius: '35%'}} alt="cssicon" />
+      </Col>
+      <Col>
+    <img src={js} class="border border-primary" className="my-2" style={{ 
+      width: "40%", 
+      borderRadius: '35%'}} alt="jsicon" />
+      </Col>
+      <Col>
+    <img src={api} class="border border-primary" className="my-2" style={{ 
+      width: "40%", 
+      borderRadius: '35%'}} alt="apiicon" />
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+    <img src={express} class="border border-primary" className="my-2" style={{ 
+      width: "40%",
+      borderRadius: '35%' }} alt="expressicon" />
+      </Col>
+      <Col>
+    <img src={mongo} class="border border-primary" className="my-2" style={{ 
+      width: "40%",
+      borderRadius: '35%' }} alt="mongoicon" />
+      </Col>
+      <Col>
+    <img src={node} class="border border-primary" className="my-2" style={{ 
+      width: "40%",
+      borderRadius: '35%' }} alt="nodeicon" />
+      </Col>
+      <Col>
+    <img src={sql} class="border border-primary" className="my-2" style={{ 
+      width: "40%",
+      borderRadius: '35%' }} alt="sqlicon" />
+      </Col>
+  </Row>
+
+</Container>
+ </div>     
   );
 }
 

@@ -106,7 +106,7 @@ function ContactForm() {
             width: '60%',
             backgroundColor: 'lightblue',
             padding: '10px',
-            margin: '2px',
+            marginLeft: '200px',
             borderRadius: '5px',
           }}  
           >Submit</button>
