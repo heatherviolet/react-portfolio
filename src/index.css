@@ -1,6 +1,5 @@
 main {
   margin: 0 auto !important;
-  max-width: 90% !important;
   padding: 150px;
 }
 
@@ -33,15 +32,19 @@ body {
   background-color: #8867ad !important;
   color: #fff !important;
   width: 400px;
+  display:flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+
 }
 
 .img-fluid {
   border-radius: 50%;
-  margin: 10px;
+  margin: 50px;
 }
 
 .self-img {
-  width: 60vw;
+  width: 80vw;
   padding-left: 10px;
 }
 
@@ -59,12 +62,10 @@ input {
 
 .nav {
   background-color: rgb(26, 20, 25);
-  padding: 15px;
+  padding: 10px 15px;
 }
 
-.text-primary {
-  padding-left: 20px;
-}
+
 .contact {
   align-items: center !important;
   border: 1px solid white;
@@ -75,17 +76,11 @@ input {
   display: table-row;
 }
 
-.about-me {
-  width: 50%;
-}
-
-.about {
-  width: 70%;
+.about-section {
   margin: auto;
 }
-
-.main-page {
-  width: 75%;
+.div {
+    padding-left: 20px;
 }
 
 label {
@@ -123,14 +118,11 @@ h2 {
 }
 
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
-
-
 
 .row {
   align-items: center;

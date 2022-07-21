@@ -10,14 +10,17 @@ import portfolio from "../../assets/projects/portfolio.jpg";
 import employee from "../../assets/projects/screen.jpg";
 import beet from "../../assets/projects/beethub.png";
 import { Container, Row, Col } from 'react-grid-system';
+import { setConfiguration } from 'react-grid-system';
+
+setConfiguration({ maxScreenClass: 'xl', gridColumns: 3 });
 
 
 function projectCard() {
     return (
-      <Container>
-      <Row>
-      <Col sm={true}>
-    <Card>
+    <Container fluid>
+    <Row align="center" justify="center" direction="row" style={{ height: '300px' }} debug>
+      <Col md={1} debug>
+      <Card>
     <Card.Img img width="200" height="200" variant="top" src={beet} />
     <Card.Body>
       <Card.Title>BeetHub</Card.Title>
@@ -29,7 +32,7 @@ function projectCard() {
         </Card.Body>
       </Card>
       </Col>
-<Col sm={true}>
+<Col md={1} debug>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={photoAllergy} />
     <Card.Body>
@@ -42,7 +45,7 @@ function projectCard() {
     </Card.Body>
   </Card>
   </Col>
-  <Col>
+  <Col debug>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={photoCommerce} />
     <Card.Body>
@@ -55,8 +58,9 @@ function projectCard() {
   </Card>
   </Col>
   </Row>
-  <Row>
-  <Col>
+  <br />
+  <Row debug>
+  <Col md={5} debug>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={imdb} />
     <Card.Body>
@@ -69,7 +73,7 @@ function projectCard() {
     </Card.Body>
   </Card>
   </Col>
-  <Col>
+  <Col debug>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={readme} />
     <Card.Body>
@@ -81,7 +85,7 @@ function projectCard() {
     </Card.Body>
   </Card>
   </Col>
-  <Col>
+  <Col debug>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={portfolio} />
     <Card.Body>
@@ -94,7 +98,7 @@ function projectCard() {
     </Card.Body>
   </Card>
   </Col>
-  <Col>
+  <Col debug>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={employee} />
     <Card.Body>
@@ -106,7 +110,8 @@ function projectCard() {
     <Button variant="primary" href="https://github.com/heatherviolet/employee-tracker.git">Github</Button>
     </Card.Body>
   </Card>
-  </Col></Row>
+  </Col>
+  </Row>
   )){'}'}
 
 </Container>
