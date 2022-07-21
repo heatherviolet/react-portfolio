@@ -10,7 +10,8 @@ function NavBar(props) {
   return (
      <Nav>
 
-<h2 class="text-primary">Heather Albjerg</h2>
+<h2 class="text-primary"
+style={{ paddingLeft: '20px'}}>Heather Albjerg</h2>
   <Nav.Item>
   <Nav.Link id="about" href="#about" onClick={() => setLinkSelected("about")}>
       About Me
