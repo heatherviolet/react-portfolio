@@ -12,57 +12,68 @@ import beet from "../../assets/projects/beethub.png";
 import { Container, Row, Col } from 'react-grid-system';
 import { setConfiguration } from 'react-grid-system';
 
-setConfiguration({ maxScreenClass: 'xl', gridColumns: 3 });
-
+ setConfiguration({ maxScreenClass: 'xl', gridColumns: 3 });
 
 function projectCard() {
-    return (
-    <Container fluid>
-    <Row align="center" justify="center" direction="row" style={{ height: '300px' }} debug>
-      <Col md={1} debug>
-      <Card>
-    <Card.Img img width="200" height="200" variant="top" src={beet} />
-    <Card.Body>
-      <Card.Title>BeetHub</Card.Title>
-      <Card.Text>
-      A website created with MERN stack. A user can search for albums which uses the spotify API. They can then add albums to their favorites or collections. Users are also able to review albums and leave ratings.
-      </Card.Text>
-      <Button variant="primary" href="https://blooming-tundra-89879.herokuapp.com/">Website</Button>
-    <Button variant="primary" href="https://github.com/heatherviolet/beat-hub.git">Github</Button>
-        </Card.Body>
-      </Card>
-      </Col>
-<Col md={1} debug>
-  <Card>
-    <Card.Img img width="200" height="200" variant="top" src={photoAllergy} />
-    <Card.Body>
-      <Card.Title>Allergy Free Kitchen</Card.Title>
-      <Card.Text>
-      An app where you can select ingredients based on common allergies and recieve recipes based on selections.
-      </Card.Text>
-      <Button variant="primary" href="https://afk-network.herokuapp.com">Website</Button>
-    <Button variant="primary" href="https://github.com/JosephJamesCoop/the-allergy-free-kitchen.git">Github</Button>
-    </Card.Body>
-  </Card>
-  </Col>
-  <Col debug>
-  <Card>
-    <Card.Img img width="200" height="200" variant="top" src={photoCommerce} />
-    <Card.Body>
-      <Card.Title>E-Commerce</Card.Title>
-      <Card.Text>
-        A backend was created for an e-commerce website using SQL and express.js
-      </Card.Text>
-    <Button variant="primary" href="https://github.com/heatherviolet/e-commerce-backend.git">Github</Button>
-    </Card.Body>
-  </Card>
-  </Col>
-  </Row>
-  <br />
-  <Row debug>
-  <Col md={5} debug>
-  <Card>
-    <Card.Img img width="200" height="200" variant="top" src={imdb} />
+  return (
+    <Container>
+      <Row>
+        <Col>
+        <Card border="primary" style={{ width: '20rem' }}>
+          <Card.Img img width="100" height="200" variant="top" src={beet} />
+            <Card.Body>
+              <Card.Title>BeetHub</Card.Title>
+              <Card.Text>
+              A website created with MERN stack. A user can search for albums which uses the spotify API. They can then add albums to their favorites or collections. Users are also able to review albums and leave ratings.
+              </Card.Text>
+              <Button variant="primary" href="https://blooming-tundra-89879.herokuapp.com/">Website</Button>
+              <Button variant="primary" href="https://github.com/heatherviolet/beat-hub.git">Github</Button>
+            </Card.Body>
+          </Card>
+          </Col>
+          <Col>
+          <Card border="primary" style={{ width: '18rem' }}>
+          <Card.Img img width="200" height="200" variant="top" src={photoAllergy} />
+            <Card.Body>
+              <Card.Title>Allergy Free Kitchen</Card.Title>
+              <Card.Text>
+              An app where you can select ingredients based on common allergies and recieve recipes based on selections.
+              </Card.Text>
+              <Button variant="primary" href="https://afk-network.herokuapp.com">Website</Button>
+     <Button variant="primary" href="https://github.com/JosephJamesCoop/the-allergy-free-kitchen.git">Github</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card>
+          <Card.Img img width="200" height="200" variant="top" src={photoCommerce} />
+            <Card.Body>
+              <Card.Title>E-Commerce</Card.Title>
+              <Card.Text>
+              A backend was created for an e-commerce website using SQL and express.js
+              </Card.Text>
+              <Button variant="primary" href="https://github.com/heatherviolet/e-commerce-backend.git">Github</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        </Row>
+        <Row style={{marginTop: "50px"}}>
+          <Col>
+   <Card>
+     <Card.Img img width="200" height="200" variant="top" src={employee} />
+     <Card.Body>
+       <Card.Title>Employee Tracker</Card.Title>
+       <Card.Text>
+       An employee tracker that uses SQL, node.js, and inquirer.
+       </Card.Text>
+       <Button variant="primary" href="https://watch.screencastify.com/v/LzxPpvQRqkze02klpN1U">Website</Button>
+     <Button variant="primary" href="https://github.com/heatherviolet/employee-tracker.git">Github</Button>
+     </Card.Body>
+   </Card>
+   </Col>
+   <Col>
+   <Card>
+   <Card.Img img width="200" height="200" variant="top" src={imdb} />
     <Card.Body>
       <Card.Title>IMDB</Card.Title>
       <Card.Text>
@@ -73,7 +84,7 @@ function projectCard() {
     </Card.Body>
   </Card>
   </Col>
-  <Col debug>
+  <Col>
   <Card>
     <Card.Img img width="200" height="200" variant="top" src={readme} />
     <Card.Body>
@@ -85,39 +96,9 @@ function projectCard() {
     </Card.Body>
   </Card>
   </Col>
-  <Col debug>
-  <Card>
-    <Card.Img img width="200" height="200" variant="top" src={portfolio} />
-    <Card.Body>
-      <Card.Title>First Portfolio</Card.Title>
-      <Card.Text>
-      My portfolio page that I created with CSS and HTML
-      </Card.Text>
-      <Button variant="primary" href="https://heatherviolet.github.io/professionalportfolio/">Website</Button>
-    <Button variant="primary" href="https://github.com/heatherviolet/professionalportfolio.git">Github</Button>
-    </Card.Body>
-  </Card>
-  </Col>
-  <Col debug>
-  <Card>
-    <Card.Img img width="200" height="200" variant="top" src={employee} />
-    <Card.Body>
-      <Card.Title>Employee Tracker</Card.Title>
-      <Card.Text>
-      An employee tracker that uses SQL, node.js, and inquirer.
-      </Card.Text>
-      <Button variant="primary" href="https://watch.screencastify.com/v/LzxPpvQRqkze02klpN1U">Website</Button>
-    <Button variant="primary" href="https://github.com/heatherviolet/employee-tracker.git">Github</Button>
-    </Card.Body>
-  </Card>
-  </Col>
-  </Row>
-  )){'}'}
-
-</Container>
-
-
-    );
+   </Row>
+        </Container>
+  );
 }
 
 export default projectCard;

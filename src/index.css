@@ -31,11 +31,12 @@ body {
 .card {
   background-color: #8867ad !important;
   color: #fff !important;
-  width: 400px;
+  width: 300px;
   display:flex;
-  max-width: 1200px;
+  max-width: 1500px;
   flex-wrap: wrap;
-
+  height: 70vh;
+ 
 }
 
 .img-fluid {
@@ -125,9 +126,6 @@ h2 {
   text-align: center;
 }
 
-.row {
-  align-items: center;
-}
 
 .my-2 {
     padding-top: 20px;
